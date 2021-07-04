@@ -48,6 +48,7 @@
 //
 // Limit Switches
 //
+#define FIL_RUNOUT_PIN     P1_24 // Eta was here
 #ifdef X_STALL_SENSITIVITY
   #define X_STOP_PIN                  X_DIAG_PIN
   #if X_HOME_TO_MIN
@@ -81,7 +82,7 @@
   #endif
 #else
   #define Z_MIN_PIN                        P1_25  // Z-
-  #define Z_MAX_PIN                        P1_24  // Z+
+  //#define Z_MAX_PIN                        P1_24  // Z+
 #endif
 
 //
